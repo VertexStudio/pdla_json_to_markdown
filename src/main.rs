@@ -1,6 +1,6 @@
 use std::{fs::OpenOptions, io::Write};
 
-use json_to_markdown::*;
+use pdla_json_to_markdown::*;
 
 use clap::Parser;
 
@@ -23,7 +23,7 @@ fn main() {
 
     let json_data = std::fs::read_to_string(args.input).expect("Error reading file");
 
-    let markdown_string = convert_json_to_markdown(&json_data).unwrap();
+    let markdown_string = convert_pdla_json_to_markdown(&json_data).unwrap();
 
     let mut file = OpenOptions::new()
         .write(true)

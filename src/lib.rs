@@ -1,10 +1,10 @@
-mod json_to_markdown_funcs;
+mod pdla_json_to_markdown_funcs;
 
 use std::fmt::Error;
 
-use json_to_markdown_funcs::*;
+use pdla_json_to_markdown_funcs::*;
 
-pub fn convert_json_to_markdown(value: &str) -> Result<String, Error> {
+pub fn convert_pdla_json_to_markdown(value: &str) -> Result<String, Error> {
     let items: Vec<Item> = serde_json::from_str(value).expect("Error parsing JSON");
 
     let mut markdown = String::new();

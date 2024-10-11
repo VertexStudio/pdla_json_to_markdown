@@ -1,5 +1,5 @@
 [package]
-name = "json_to_markdown"
+name = "pdla_json_to_markdown"
 version = "0.1.0"
 edition = "2021"
 
